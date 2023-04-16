@@ -13,13 +13,18 @@ plec = false;
 
 //Warunkowe wyświetlenie komunikatów
 
+if (wiek <= 18 && plec == true)
+{
+        Console.WriteLine("Niepełnoletni mężczyzna"); 
+
+}
+else   
 if (imie == "Ewa" && wiek == 33 && plec == false)
-{ Console.WriteLine(imie + ", lat " + wiek); }
+{
+    Console.WriteLine(imie + ", lat " + wiek);
+}
+
 else
-if (wiek <= 30 && plec == false)
 {
     Console.WriteLine("kobieta poniżej 30 lat");
 }
-else
-{ Console.WriteLine("Niepełnoletni mężczyzna"); }
-
